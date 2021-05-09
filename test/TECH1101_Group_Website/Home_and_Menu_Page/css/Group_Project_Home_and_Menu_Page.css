@@ -1,0 +1,543 @@
+body /*The heart of the web page*/
+{
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+
+header h1 /*Dandy Brewing top banner*/
+{
+	background-color: #AEC6CF;
+	color: #FFFFFF;
+	text-align: center;
+	animation: glow 1s ease-in-out infinite alternate;
+	margin-top: 0;
+	font-size: 4vw;
+	padding: 50px;
+	margin-bottom: 0px;
+}
+
+@-webkit-keyframes glow /*Glowing neon light animation for the banner*/
+{
+	from
+	{
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7C7F92, 0 0 40px #7C7F92, 0 0 50px #7C7F92, 0 0 60px #7C7F92, 0 0 70px #7C7F92;
+	}
+	
+	to
+	{
+	  text-shadow: 0 0 20px #fff, 0 0 30px #0099CD, 0 0 40px #0099CD, 0 0 50px #0099CD, 0 0 60px #0099CD, 0 0 70px #0099CD, 0 0 80px #0099CD;
+	}
+}
+
+header ul /*Nav bar design*/
+{
+	text-align: center;
+	background-color: #AEC6CF;
+	height: 30px;
+	margin-bottom: 0;
+	padding-top: 17px;
+	padding-bottom: 10px;
+}
+
+header a /*Nav bar (home to contact)*/
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+	margin-top: -4px;
+}
+
+header li /*Nav bar buttons on the left side into the grey box*/
+{
+	display: inline;
+	padding: 2px 10px;
+	text-align: center;
+}
+
+nav ul li a /*Nav button style*/
+{
+	background: #eee;
+	padding: 2px 10px;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #444;
+	border-radius: 10px;
+}
+
+header a:hover /*Nav bar buttons light up while hovering over them*/
+{
+    color:#0099CD;
+    font-weight: bold;
+}
+
+section /*The header text in the columns*/
+{
+	text-align: center;
+	color: black;
+	overflow: auto;
+	font-size: 30px;
+}
+
+#homeBlurp /*Home pages main text about dandy*/
+{
+	height: 550px;
+	width: auto;
+	margin-bottom: 1px;
+	margin-top: -25px;
+	background-color: #AEC6CF;
+	text-align:justify;
+	font-size: 30px;
+	color: black;
+	background-color: #AEC6CF;
+	padding: 20px;
+}
+
+.coLumn1 /*Left mini box*/
+{
+	width: 490px;
+	float:left;
+	margin-right: 10px;
+	margin-left: 0;
+	height: 550px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: #AEC6CF;
+}
+
+.coLumn2 /*right mini box*/
+{
+	width: 490px;
+	float:left;
+	margin-right: 0;
+	margin-left: 10px;
+	height: 550px;
+	margin-bottom: 0;
+	margin-top: 20px;
+	background-color: #AEC6CF;
+}
+
+.coLumn3 /*Second Left mini box*/
+{
+	width: 490px;
+	float:left;
+	margin-right: 10px;
+	margin-left: 0;
+	height: 550px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	background-color: #AEC6CF;
+}
+
+.coLumn4 /*Second right mini box*/
+{
+	width: 490px;
+	float:left;
+	margin-right: 0;
+	margin-left: 10px;
+	height: 550px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	background-color: #AEC6CF;
+}
+
+#WhatWeDo /*Text within the covid-19 regulations column*/
+{
+	font-size: 20px;
+	text-align: justify;
+	color: black;
+	padding: 40px;
+}
+
+#hoursText /*Text within the upcoming evemts column*/
+{
+	font-size: 20px;
+	text-align: justify;
+	color: black;
+	padding: 40px;
+}
+
+.DandyLineUp /*Left box in menu*/
+{
+	width: 490px;
+	float:left;
+	margin-right: 10px;
+	margin-left: 0;
+	height: 1650px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	background-color: #AEC6CF;
+}
+
+#LineUp /*Text within the covid-19 regulations column*/
+{
+	font-size: 20px;
+	text-align: justify;
+	color: black;
+	padding: 40px;
+}
+
+.Seasonal /*right box in menu*/
+{
+	width: 490px;
+	float:left;
+	margin-right: 0;
+	margin-left: 10px;
+	height: 1650px;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	background-color: #AEC6CF;
+} 
+
+#Season /*Text within the upcoming evemts column*/
+{
+	font-size: 20px;
+	text-align: justify;
+	color: black;
+	padding: 40px;
+}
+
+#mainPic /*Main Picture for home page*/
+{
+	height: 550px;
+	width: 1000px;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	background-color: #AEC6CF;
+	background:url(../img/DandyBrewingPic1.jpg) no-repeat -275px;
+}
+
+footer /*The footer*/
+{
+	background-color: #AEC6CF;
+	text-align: center;
+	height: 180px;
+	padding-top: 5px;
+	width: 1000px;
+	margin-top: 5px;
+}
+
+@media (max-width: 460px) /*Helps the web page adjust to smaller screen sizes. Also starting at this point I was not fully able to get the adjustable browser to css more concise than it currently is.*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+	font-size: small;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header
+  {
+	padding-bottom: 20px;
+  }
+
+  #mainPic /*Changes the image when screen is shrunk*/
+  {
+	background:url(../img/DandyBrewingPic3.jpg) no-repeat -150px -180px;
+	width: auto;
+	margin-bottom: 40px;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+}
+
+@media (max-width: 600px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section, header nav li, header nav
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header
+  {
+	padding-bottom: 20px;
+  }
+
+  #mainPic /*Changes the image when screen is shrunk*/
+  {
+	background:url(../img/DandyBrewingPic3.jpg) no-repeat -150px -180px;
+	width: auto;
+	margin-bottom: 40px;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+
+    header nav
+  {
+	margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  #mainPic /*Changes the image when screen is shrunk*/
+  {
+	background:url(../img/DandyBrewingPic3.jpg) no-repeat -150px -180px;
+	width: auto;
+	margin-bottom: 40px;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+
+  header nav
+  {
+	margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 992px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  footer
+  {
+	height: auto;
+  }
+
+}
+
+@media (max-width: 1200px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+
+}
+
+@media (max-width: 1500px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+
+}
+
+@media (max-width: 1800px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+}
+
+@media (max-width: 2100px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+}
+
+@media (max-width: 2400px) /*Helps the web page adjust to smaller screen sizes*/
+{
+	.coLumn1, .coLumn2, .coLumn3, .coLumn4, #homeBlurp, header ul, section
+  {
+    float: none;
+    text-align: center;
+    width: auto;
+	height: auto;
+  }
+
+  body
+  {
+	width: 95%;
+  }
+
+  header h1
+  {
+	text-shadow: 2px 2px #AEC6CF;
+	font-size: xx-large;
+  }
+
+  header a
+  {
+	font-size:80%;
+  }
+
+  footer
+  {
+	width: auto;
+  }
+
+}

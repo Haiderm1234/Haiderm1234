@@ -1,0 +1,267 @@
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+  display: block;
+}
+
+body {
+  color: #000;
+  background-size: cover;
+  background-color: #f9f8f6;
+  background-image: url("images/background.jpg");
+  background-position: center;
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+  margin: 0px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 20px auto 20px auto;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+header {
+  height: 160px;
+}
+
+nav,
+footer {
+  clear: both;
+  color: #ffffff;
+  background-color: #464646;
+  height: 30px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 5px 0px 50px 30px;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav li a {
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: #fff;
+  width: 100px;
+}
+
+img {
+  display: block;
+  /* text-align: inherit; */
+  float: right;
+  margin: 0px 30px 0px 0px;
+  max-width: 20%;
+  height: auto;
+}
+
+nav li a:hover {
+  background-color: #464646;
+  color: yellow;
+  transition: 0.4s;
+}
+
+section {
+  float: left;
+  width: 659px;
+  border-right: 0px solid #eeeeee;
+}
+
+section.banner {
+  color: yellow;
+  margin-top: -77px;
+  width: 100%;
+  background-image: url("images/talking_heads-speaking_in_tongues.png");
+  height: 300px;
+  background-position: center;
+  /* opacity: initial; */
+  backface-visibility: visible;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+article {
+  margin: 30px 0px 0px 40px;
+  clear: both;
+  /* overflow: auto; */
+  width: 100%;
+  /* border-bottom: 5px solid yellow; */
+}
+
+hgroup {
+  margin-top: 40px;
+}
+
+/* figure {
+          float: left;
+          width: 290px;
+          height: 220px;
+          padding: 5px;
+          margin: 20px;
+          border: 111px solid #eeeeee;
+        } */
+
+aside {
+  color: #fff;
+  width: 270px;
+  float: right;
+  margin: 20px 100px 0px -10px;
+  height: 1000px;
+  background: #464646;
+}
+
+aside section a {
+  display: block;
+  /* padding: 10px; */
+  border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+  color: #985d6a;
+  background-color: #efefef;
+}
+
+a {
+  color: #de6581;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100%;
+  height: 30px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  margin: 0px;
+  /* text-align: left; */
+}
+
+/* header h1 {
+          background-color: rgb(255, 255, 0);
+        } */
+.title header h1 {
+  text-align: center;
+  background-color: yellow;
+}
+
+h2 {
+  color: white;
+}
+
+h3 {
+  margin: 0px 0px 10px 0px;
+  color: #ffffff;
+}
+
+aside h2 {
+  font-size: 15pt;
+  max-width: 94.45%;
+  padding-left: 15px;
+  text-align: left;
+  /* size: 2px; */
+  background-color: rgb(255, 255, 0);
+  color: #464646;
+}
+
+article aside p {
+  padding: 0px 15px 0px 15px;
+}
+
+section.Verse h2 {
+  margin-top: 30px;
+  width: 120px;
+  background-color: rgb(255, 255, 0);
+  color: #464646;
+}
+
+article section.Verse {
+  /* margin-top: 50px; */
+  /* background-color: yellow; */
+  background-size: 120px;
+  width: 300px;
+  margin: 0px 0px 0px 25px;
+}
+
+article .Verse p {
+  background-color: white;
+  border-left: rgb(255, 255, 0) solid 4px;
+  margin-top: -10px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+  padding-left: 5px;
+}
+
+section.chorus h2 {
+  width: 120px;
+  background-color: rgb(255, 255, 0);
+  color: #464646;
+}
+
+article section.chorus {
+  /* background-color: yellow; */
+  width: 300px;
+  margin: 0px 30px 0px 50px;
+}
+
+article .chorus p {
+  border-left: rgb(255, 255, 0) solid 4px;
+  margin-top: -10px;
+  background-color: white;
+  margin-bottom: 50px;
+  margin-left: 0px;
+  padding-left: 5px;
+}
+
+.banner .bannerbox {
+  padding-top: 50px;
+  text-align: left;
+  opacity: 0.9;
+  background-color: black;
+  border: 2px black;
+  height: 250px;
+  margin: 0px 60px 0px 60px;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: left;
+  width: 800px;
+  color: black;
+  border-top: 5px solid yellow;
+  background-color: white;
+  font-size: 10px;
+  /* padding: 7px 0px 0px 20px; */
+}
+section iframe {
+  display: block;
+  /* float: left; */
+  /* margin-left: -10px; */
+  border-top: 5px solid #fff;
+  /* border-left: 4px solid white; */
+  /* border-right: 4px solid white; */
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  width: 250px;
+}
+.highlight {
+  background-color: yellow;
+  background-image: linear-gradient(to left, yellow 0%, #ffe459 100%);
+}

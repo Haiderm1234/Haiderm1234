@@ -1,0 +1,292 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  background: radial-gradient(#8ca7ff, #406dff);
+}
+
+/* Banner details */
+.banner {
+  width: 100%;
+
+  background-size: cover;
+  height: 100%;
+
+  position: center;
+  z-index: -1;
+}
+
+.banner_Content {
+  width: 100%;
+  background-image: url(img/index_back.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin-top: 0px;
+  padding: 0px;
+  position: relative;
+  /* transform: translate(0%, 0%); */
+}
+.banner_Content h1 {
+  text-align: center;
+
+  font-size: 52px;
+  /* font-weight: bold; */
+  transform: translate(2vh, 19vh);
+}
+.banner_Content h2 {
+  text-align: center;
+  font-size: 70px;
+  transform: translate(3vh, 28.7vh);
+}
+.banner_Content h4 {
+  text-align: center;
+  font-size: 70px;
+  transform: translate(3vh, 24.7vh);
+}
+.banner_Content h3 {
+  text-align: center;
+  font-size: 32px;
+  transform: translate(3vh, 34vh);
+}
+
+/* wrapper contains main content */
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+section {
+  /* position: center; */
+  height: 56vh;
+  width: 100px;
+  /* position: relative; */
+  flex-grow: 1;
+}
+
+.chtSheets {
+  top: 50%;
+  /* transform: translate(0%, 154%); */
+  /* margin-top: 2px; */
+  position: relative;
+  /* transform: translate(-60%,50%); */
+  width: 100%;
+  height: 125vh;
+  background: whitesmoke;
+  opacity: 0.69;
+  /* top: 50%; */
+  /* left: 52%; */
+  /* right: 54%; */
+  border-radius: 29px;
+}
+.chtSheets h2 {
+  text-align: center;
+  /* box-shadow: black 0px 0px 10px; */
+}
+
+/* HTML cheat sheet */
+.html {
+  transform: translate(2vh, 1vh);
+  background: black;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  margin-left: 31.5px;
+  margin-right: 20px;
+  height: 111vh;
+}
+/* CSS Cheat Sheet */
+.css {
+  transform: translate(2vh, 1vh);
+  background: black;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  /* margin-left: 27px; */
+  margin-right: 13px;
+  height: 111vh;
+}
+/* section {
+  float: left;
+} */
+.js {
+  transform: translate(2vh, 1vh);
+  background: black;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  margin-left: 7px;
+  margin-right: 13px;
+  height: 111vh;
+}
+.sect {
+  transform: translate(2vh, 1vh);
+  background: black;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  margin-left: 7px;
+  margin-right: 13px;
+  height: 111vh;
+}
+/* @media (min-width: 300px) {
+} */
+/* @media screen and (max-width: 500px) {
+  .js, .css {width: 100%;}
+} */
+/* .css h3 {
+  text-align: center;
+} */
+
+/* flipping sections */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front h3 {
+  transform: translate(0vh, 17.5vh);
+  text-align: center;
+}
+
+.html:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.css:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.js:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.sect:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+@media screen and (min-width: 110vh) {
+  .chtSheets {
+    height: 125vh;
+  }
+  .html {
+    margin-right: 6vh;
+  }
+  .css {
+    margin-right: 4.5vh;
+  }
+  .js {
+    margin-right: 4.5vh;
+  }
+}
+@media screen and (min-width: 682px) {
+  section {
+    float: left;
+    /* margin-right: 130px; */
+    margin-bottom: 3.5vh;
+    /* margin-left: -2vh; */
+  }
+  .html {
+    margin-left: 10px;
+  }
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 111vh;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #8ca7ff;
+  /* color: white; */
+  transform: rotateY(180deg);
+}
+
+/* table */
+table {
+  color: black;
+  border: 2px dotted black;
+  width: 100%;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: blue;
+}
+tr:nth-child(odd) {
+  background-color: rgb(0, 209, 209);
+}
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+}
+td {
+  text-align: left;
+  font-weight: bolder;
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+/* nav bar controls */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 22, 88, 0.89);
+  font-size: 22px;
+  height: 30px;
+  text-align: center;
+  z-index: 2;
+}
+nav a {
+  box-shadow: black 0px 5px 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #8ca7ff;
+  display: inline-block;
+  color: black;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+nav a:hover {
+  color: rgba(0, 22, 88, 0.89);
+  background: rgb(0, 255, 255);
+  box-shadow: rgb(0, 187, 187) 0px 3px 20px;
+}
+
+/* controls highlight */
+mark {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(0, 215, 215, 0.425);
+  /* box-shadow: teal 0px 0px 20px;     */
+  /* opacity: 0.9; */
+}
+
+/* canvas details */
+/* #canvas1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#8ca7ff, #406dff);
+} */
